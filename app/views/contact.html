@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+About - GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+	{{ govukBreadcrumbs({
+	  items: [
+	    {
+	      text: "GOV.UK Prototype Kit",
+	      href: "/docs"
+	    }
+	  ]
+	}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">Contact us</h1>
+
+      <p class="govuk-body-m">
+				Try one of the popular topics below to get a faster answer.
+      </p>
+
+      <h3 class="govuk-heading-s"><a href="/contact-esfa">Add an apprentice</a></h3>
+			<p class="govuk-body-s">
+				Contact ESFA for questions about adding an apprentice.
+      </p>
+
+			<h3 class="govuk-heading-s"><a href="/contact-esfa">Employ an apprentice</a></h3>
+			<p class="govuk-body-s">
+				Get help with employing an apprentice.
+      </p>
+
+			<h3 class="govuk-heading-s"><a href="/contact-esfa">Find an apprentice</a></h3>
+			<p class="govuk-body-s">
+				Get advice on how to find an apprentice.
+      </p>
+
+			<details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      More topics
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    You can <a href="/get-help">search for more topics</a>.
+</details>
+
+    </div>
+
+
+  </div>
+
+
+
+{% endblock %}

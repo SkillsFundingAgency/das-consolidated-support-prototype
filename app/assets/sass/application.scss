@@ -1,0 +1,678 @@
+// global styles for <a> and <p> tags
+$govuk-global-styles: true;
+
+// Import GOV.UK Frontend
+@import "node_modules/govuk-frontend/all";
+
+// Patterns that aren't in Frontend
+@import "patterns/check-your-answers";
+@import "patterns/step-by-step-navigation";
+@import "patterns/task-list";
+@import "patterns/related-items";
+// @import "patterns/govuk";
+
+// Components that aren't in Frontend
+@import "components/cookie-banner";
+@import "components/accordion";
+
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+.heading-border {
+  padding-bottom: 20px;
+  border-bottom: 4px solid #bfc1c3;
+}
+
+// help banner classes
+.header-inner:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.header-inner {
+  max-width: 960px;
+  margin: 0 15px;
+}
+
+@media (min-width: 641px) {
+  .header-inner {
+    margin: 0 30px;
+  }
+}
+
+@media (min-width: 1020px) {
+  .header-inner {
+    margin: 0 auto;
+  }
+}
+
+.header-inner:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.header-inner:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.header-inner:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.header-inner {
+  max-width: 960px;
+  margin: 0 15px;
+}
+
+@media (min-width: 641px) {
+  .header-inner {
+    margin: 0 30px;
+  }
+}
+
+@media (min-width: 1020px) {
+  .header-inner {
+    margin: 0 auto;
+  }
+}
+
+.header-inner:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.header-inner:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.header-user {
+  background: #f8f8f8;
+}
+
+.header-user {
+  border-bottom: 1px solid #bfc1c3;
+}
+a.nav-menu-link {
+  float: right;
+  clear: both;
+  margin: 10px 0;
+  font-size: 14px;
+  padding-left: 15px !important;
+  color: #000;
+  text-decoration: none;
+}
+
+a.nav-menu-link:before {
+  left: 5px !important;
+  margin-top: -6px !important;
+}
+
+nav#user-nav {
+  font-size: 14px;
+  clear: both;
+}
+
+@media (min-width: 641px) {
+  nav#user-nav {
+    font-size: 16px;
+  }
+}
+
+nav#user-nav > ul {
+  list-style: none;
+  margin-left: -15px;
+  margin-right: -15px;
+  position: relative;
+}
+
+@media (min-width: 641px) {
+  nav#user-nav > ul {
+    float: right;
+    margin: 0;
+  }
+}
+
+nav#user-nav > ul li {
+  border-top: 1px solid #bfc1c3;
+}
+
+@media (min-width: 641px) {
+  nav#user-nav > ul li {
+    border: none;
+  }
+}
+
+nav#user-nav > ul li a {
+  padding: 12px 15px 10px 20px;
+  display: block;
+}
+
+nav#user-nav > ul li li a {
+  padding-left: 15px;
+}
+
+nav#user-nav > ul li.top-level > a {
+  text-decoration: none;
+  color: #0b0c0c;
+}
+
+nav#user-nav > ul li.top-level.open ul li.selected a {
+  padding-left: 20px;
+  background-image: url("/public/images/tick.png");
+  background-repeat: no-repeat;
+  background-position: 0px 14px;
+  background-size: 15px;
+  text-decoration: none;
+  color: #0b0c0c;
+  margin-left: 15px;
+}
+
+@media (min-width: 641px) {
+  nav#user-nav > ul li.top-level {
+    display: inline-block;
+    float: left;
+  }
+  nav#user-nav > ul li.top-level > a {
+    padding-top: 10px;
+    padding-bottom: 8px;
+    margin: 3px 0;
+  }
+  nav#user-nav > ul li.top-level > a.js-toggle {
+    padding-left: 25px;
+  }
+  nav#user-nav > ul li.top-level ul {
+    display: none;
+  }
+  nav#user-nav > ul li.top-level.open {
+    position: relative;
+  }
+  nav#user-nav > ul li.top-level.open ul {
+    display: block;
+    position: absolute;
+    width: 250px;
+    top: 100%;
+    right: 0;
+    background: #f8f8f8;
+    border: 1px solid #bfc1c3;
+    z-index: 100;
+  }
+  nav#user-nav > ul li.top-level.open ul li {
+    margin: 0 10px;
+    border-bottom: 1px solid #bfc1c3;
+  }
+  nav#user-nav > ul li.top-level.open ul li:last-child {
+    border: none;
+  }
+  nav#user-nav > ul li.top-level.open ul li a {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  nav#user-nav > ul li.top-level.open ul li.selected a {
+    margin-left: 0;
+  }
+  nav#user-nav > ul li.top-level a.menu-open,
+  nav#user-nav > ul li.top-level a.menu-open:focus {
+    background: #f8f8f8;
+    border: 1px solid #bfc1c3;
+    border-bottom: none;
+    position: relative;
+    margin-bottom: -1px;
+    z-index: 101;
+  }
+}
+nav#user-nav > ul li.top-level > a {
+  text-decoration: none;
+  color: #0b0c0c;
+}
+
+nav#user-nav > ul li.top-level.open ul li.selected a {
+  padding-left: 20px;
+  background-image: url("/public/images/tick.png");
+  background-repeat: no-repeat;
+  background-position: 0px 14px;
+  background-size: 15px;
+  text-decoration: none;
+  color: #0b0c0c;
+  margin-left: 15px;
+}
+
+@media (min-width: 641px) {
+  nav#user-nav > ul li.top-level {
+    display: inline-block;
+    float: left;
+  }
+  nav#user-nav > ul li.top-level > a {
+    padding-top: 10px;
+    padding-bottom: 8px;
+    margin: 3px 0;
+  }
+  nav#user-nav > ul li.top-level > a.js-toggle {
+    padding-left: 25px;
+  }
+  nav#user-nav > ul li.top-level ul {
+    display: none;
+  }
+  nav#user-nav > ul li.top-level.open {
+    position: relative;
+  }
+  nav#user-nav > ul li.top-level.open ul {
+    display: block;
+    position: absolute;
+    width: 250px;
+    top: 100%;
+    right: 0;
+    background: #f8f8f8;
+    border: 1px solid #bfc1c3;
+    z-index: 100;
+  }
+  nav#user-nav > ul li.top-level.open ul li {
+    margin: 0 10px;
+    border-bottom: 1px solid #bfc1c3;
+  }
+  nav#user-nav > ul li.top-level.open ul li:last-child {
+    border: none;
+  }
+  nav#user-nav > ul li.top-level.open ul li a {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  nav#user-nav > ul li.top-level.open ul li.selected a {
+    margin-left: 0;
+  }
+  nav#user-nav > ul li.top-level a.menu-open,
+  nav#user-nav > ul li.top-level a.menu-open:focus {
+    background: #f8f8f8;
+    border: 1px solid #bfc1c3;
+    border-bottom: none;
+    position: relative;
+    margin-bottom: -1px;
+    z-index: 101;
+  }
+}
+
+// Header-organisation
+
+.header-organisation {
+  border-bottom: 1px solid #bfc1c3;
+}
+
+.header-organisation h2 {
+  padding: 0;
+  margin-top: 0.75em;
+  margin-bottom: 0;
+}
+
+// User banner
+
+.global-nav:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.global-nav:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.global-nav:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.global-nav:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.global-nav:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.global-nav:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+nav.global-nav {
+  font-size: 14px;
+}
+
+@media (min-width: 641px) {
+  nav.global-nav {
+    font-size: 16px;
+  }
+}
+
+nav.global-nav ul {
+  list-style: none;
+  margin: 0;
+  margin-left: -15px;
+  margin-rightr: -15px;
+  padding:0;
+  position: relative;
+}
+
+nav.global-nav ul li {
+  display: inline-block;
+  float: left;
+}
+
+nav.global-nav ul li a {
+  padding: 12px 15px 10px;
+  display: block;
+  position: relative;
+}
+
+nav.global-nav ul li a:focus {
+  outline: 0;
+}
+
+nav.global-nav ul li.current a {
+  color: black;
+  text-decoration: none;
+}
+
+nav.global-nav ul li.current a:after {
+  content: '';
+  display: block;
+  height: 5px;
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  bottom: -1px;
+  z-index: 1;
+  background: #005ea5;
+}
+
+nav.global-nav ul li.more-link a {
+  position: absolute;
+}
+
+@media (min-width: 641px) {
+  nav.global-nav ul li.more-link {
+    display: none;
+  }
+}
+
+nav.global-nav ul#global-nav-links-secondary {
+  float: none;
+  clear: both;
+  margin-right: -15px;
+}
+
+@media (min-width: 641px) {
+  nav.global-nav ul#global-nav-links-secondary {
+    float: left;
+    clear: none;
+    margin-left: 0;
+  }
+}
+
+nav.global-nav ul#global-nav-links-secondary li {
+  display: block;
+  float: none;
+  border-top: 1px solid #bfc1c3;
+}
+
+@media (min-width: 641px) {
+  nav.global-nav ul#global-nav-links-secondary li {
+    float: left;
+    border: none;
+  }
+}
+
+@media (min-width: 769px) {
+  nav.global-nav ul {
+    font-size: 19px;
+  }
+}
+
+nav.global-nav ul li.sa-stacker {
+  float: right;
+}
+
+nav.global-nav ul li.sa-stacker ul {
+  display: none;
+}
+
+nav.global-nav ul li.sa-stacker.sa-open ul {
+  display: block;
+  position: absolute;
+  background: white;
+  left: 15px;
+  right: -15px;
+  border-bottom: 2px solid #bfc1c3;
+}
+
+nav.global-nav ul li.sa-stacker.sa-open ul li {
+  display: block;
+  float: none;
+  border-top: 1px solid #bfc1c3;
+}
+
+// Looks like a link underline
+
+.looks-like-a-link {
+  color: #005ea5;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.looks-like-a-link-underline {
+  color: #005ea5;
+  font-weight: 400;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.looks-like-a-link-underline-h2 {
+  color: #005ea5;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+// To do border left
+
+@media (min-width: 641px) and (max-width: 890px){
+.rj-alert-wrapper {
+ height:135px;
+}
+}
+
+ @media (min-width: 641px) and (max-width: 700px){
+.rj-alert-wrapper {
+ height:160px;
+}
+}
+
+.rj-alert-wrapper {
+  border-left: 4px solid #005ea5;
+  width: 100%;
+  min-height: 80px;
+  margin-top: 15px;
+  margin-left: 10px;
+  padding: 20px;
+}
+
+
+// Heading border
+
+.rj-headings-border {
+  padding-bottom: 20px;
+  border-bottom: 4px solid #bfc1c3;
+  margin-top:50px;
+}
+
+.rj-headings-border-top {
+  padding-top: 20px;
+  border-top: 4px solid #bfc1c3;
+}
+
+.rj-home-spacer {
+  margin-bottom: 35px;
+}
+
+
+// Filter box
+
+.govuk-option-select {
+  background-color: #dee0e2;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 769px) {
+  .govuk-option-select::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+  }
+  .govuk-option-select::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+  }
+}
+
+.govuk-option-select:focus {
+  outline: 3px solid #ffbf47;
+}
+
+.govuk-option-select .container-head {
+  padding: 0 5px;
+}
+
+.govuk-option-select .option-select-label {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  font-size-adjust: 0.5;
+  margin-right: 40px;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+@media (min-width: 641px) {
+  .govuk-option-select .option-select-label {
+    font-size: 19px !important;
+    line-height: 1.31579;
+  }
+}
+
+.govuk-option-select .options-container {
+  position: relative;
+  background-color: #fff;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+@media (min-width: 769px) {
+  .govuk-option-select .options-container {
+    max-height: 200px;
+  }
+}
+
+.govuk-option-select .options-container label {
+  display: -moz-inline-stack;
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+}
+
+@media (min-width: 769px) {
+  .govuk-option-select .options-container label {
+    width: 90%;
+  }
+}
+
+.govuk-option-select .options-container label:hover {
+  background-color: #f8f8f8;
+}
+
+.govuk-option-select .options-container input {
+  float: left;
+  margin: 2px 10px 0 -27px;
+  width: 38px;
+  height: 38px;
+}
+
+.js-enabled .govuk-option-select {
+  padding: 0 0 1px;
+}
+
+.js-enabled .govuk-option-select .js-selected-counter {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  font-size-adjust: 0.5;
+}
+
+@media (min-width: 641px) {
+  .js-enabled .govuk-option-select .js-selected-counter {
+    font-size: 14px;
+    line-height: 1.42857;
+  }
+}
+
+.js-enabled .govuk-option-select .options-container {
+  border: 1px solid #dee0e2;
+}
+
+.js-enabled .govuk-option-select.js-collapsible button {
+  z-index: 100;
+  position: relative;
+  border: none;
+  display: block;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  margin-bottom: -1px;
+  padding: 5px 8px;
+  background: url(https://assets.publishing.service.gov.uk/static/govuk-component/option-select-toggle-sprite-5f8bb91ff4faf8d3dbcd46d0a4d1e90834b9b9ab3d41979068ea19fdf27529be.png) no-repeat right 5px;
+  background-color: #dee0e2;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .js-enabled .govuk-option-select.js-collapsible button {
+    background-size: 32px 50px;
+    background: url(https://assets.publishing.service.gov.uk/static/govuk-component/option-select-toggle-sprite-5f8bb91ff4faf8d3dbcd46d0a4d1e90834b9b9ab3d41979068ea19fdf27529be.png) no-repeat right 5px;
+  }
+}
+
+.js-enabled .govuk-option-select.js-collapsible button:hover {
+  background-color: #bfc1c3;
+}
+
+.js-enabled .govuk-option-select.js-collapsible button:hover + .options-container {
+  border-color: #bfc1c3;
+}
+
+.js-enabled .govuk-option-select.js-collapsible button[disabled] {
+  background-image: none;
+  color: inherit;
+}
+
+.js-enabled .govuk-option-select.js-collapsible.js-closed button {
+  background-position: right -75px;
+}
+
+.js-enabled .govuk-option-select.js-collapsible.js-closed .options-container {
+  display: none;
+}

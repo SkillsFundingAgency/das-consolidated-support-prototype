@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Question page
+{% endblock %}
+
+{% block content %}
+  <!--Help banner-->
+  <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-third">
+          <a href="/0-1-0/get-help" class="govuk-back-link">Back</a>
+          </div>
+          </div>
+
+
+   <!--Header-->
+   <div class="govuk-grid-row">
+     <div class="govuk-grid-column-two-thirds">
+       <h1 class="govuk-heading-xl">Find an answer about apprenticeships</h1>
+     </div>
+   </div>
+
+   <!--Search box-->
+   <div class="govuk-grid-row">
+     <div class="govuk-grid-column-two-thirds">
+       <div class="govuk-form-group">
+           <label class="govuk-label" for="search">
+            Search
+           </label>
+           <input class="govuk-input govuk-!-width-two-thirds" id="search" name="search" type="text">
+           <a class="govuk-button" href="/0-1-0/help-results">Search</a>
+         </div>
+
+     </div>
+   </div>
+   <!--Filter results-->
+   <div class="govuk-grid-row">
+
+     <!-- <div class="govuk-grid-column-one-third">
+       <h3 class="govuk-heading-m"><a href="#">Finance</a></h3>
+       <p class="govuk-body">View your financial transactions.</p>
+     </div> -->
+
+     <!-- Search results -->
+     <div class="govuk-grid-column-two-thirds">
+       <h2 class="govuk-heading-l">Search results</h2>
+
+       <h3 class="govuk-heading-m"><a href="/0-1-0/knowledge-articles/english-percentage-change">Why has my English percentage changed?</a></h3>
+         <p class="govuk-body">Typically, changes to your employees’ living circumstances may cause your English percentage to change</p>
+
+         <h3 class="govuk-heading-m"><a href="/0-1-0/knowledge-articles/english-percentage-levy-calculation">English percentage and the levy calculation</a></h3>
+           <p class="govuk-body">The amount of levy funds in your apprenticeship service account will depend on your English percentage calculation.</p>
+
+           <h3 class="govuk-heading-m"><a href="/0-1-0/knowledge-articles/change-english-percentage">How do I change my English percentage?</a></h3>
+             <p class="govuk-body">You don’t need to change your English percentage.</p>
+
+            <h3 class="govuk-heading-m"><a href="/0-1-0/knowledge-articles/access-account">Our only apprenticeship service user has left the company – how do we access our account?</a></h3>
+               <p class="govuk-body">You will need to ring us and we will add a new user to your account.</p>
+
+             <h3 class="govuk-heading-m"><a href="/0-1-0/knowledge-articles/access-account">How does the English percentage affect my levy credit?</a></h3>
+                 <p class="govuk-body">HMRC works out the English percentage for each PAYE scheme by dividing the total year-to-date pay bill of employees who live in England by the total year-to-date pay bill of all employees.</p>
+     </div>
+   </div>
+{% endblock %}
