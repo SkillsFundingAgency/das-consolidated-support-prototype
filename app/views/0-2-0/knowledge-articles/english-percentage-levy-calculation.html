@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">English percentage and the levy calculation</h1>
+      </div>
+    </div>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-body">Updated 10 May 2017.</p>
+
+        <p class="govuk-body">The amount of levy funds in your apprenticeship service account will depend on your English percentage calculation.</p>
+        <p class="govuk-body">HMRC calculates your English percentage from the information you provide in your pay bill. They base this calculation on how many of your employees live in England and the proportion of your pay bill paid to those employees. HMRC runs this calculation in January, April, July and October each year.</p>
+        <p class="govuk-body">This example shows how HMRC uses the English percentage to calculate the levy:</p>
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li>the employer Example Limited declares £500,000 of apprenticeship levy in the tax year April 2017 to March 2018</li>
+          <li>90% of the employees working at Example Limited live in England so their English percentage is 90%</li>
+          <li>to calculate the levy funds, HMRC multiplies the levy declaration by the English percentage: £500,000 x 90% = £450,000</li>
+          <li>HMRC then adds a 10% top-up to the levy funds: 10% of £450,000 = £45,000</li>
+          <li>The levy total for Example Limited is: £450,000 + £45,000 = £495,000</li>
+          </ul>
+      </div>
+
+      <div class="govuk-grid-column-one-third">
+        <h3 class="govuk-heading-m">Related articles</h3>
+        <a href="/0-1-0/contact-pages/apprenticeship-helpline">Contact us</a>
+
+      </div>
+
+  </main>
+</div>
+
+
+
+
+{% endblock %}

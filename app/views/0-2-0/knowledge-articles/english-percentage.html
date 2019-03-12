@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">English percentage</h1>
+      </div>
+    </div>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-body">Updated 9 November 2017.</p>
+
+        <p class="govuk-body">English percentage is the amount of your organisation’s payroll that gets paid to employees who live in England.</p>
+        <p class="govuk-body">HMRC works out your organisation’s English percentage using payroll information.</p>
+
+        <h3 class="govuk-heading-m">Changes to your English percentage</h3>
+        <p class="govuk-body">Your organisation’s English percentage can change if any of your employees’ living situations change, for example:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>it can increase if your employees who lived in other parts of the UK move to England</li>
+          <li>it can decrease if you hire new employees who live in Scotland, Wales or Northern Ireland</li>
+          </ul>
+
+          <p class="govuk-body">HMRC uses information it already has about where your employees live. It’s important that you tell HMRC if any of your employees’ home addresses change.</p>
+          <p class="govuk-body">You can <a href="#">view your latest English percentage in your apprentice service account</a>.</p>
+
+          <h3 class="govuk-heading-m">How we work out the levy</h3>
+          <p class="govuk-body">To work out the levy, HMRC multiplies the levy declaration by the English percentage. They do this 3 times a year in January, April and October.</p>
+
+          <h3 class="govuk-heading-m">Example</h3>
+          <p class="govuk-body">Acme Limited declared £500,000 of apprenticeship levy in the tax year April 2017 to March 2018. 90% of Acme Limited’s employees live in England, so their English percentage is 90%.</p>
+          <p class="govuk-body">HMRC multiplies £500,000 by 90% which equals £450,000. They then add £45,000 (a 10% top-up bonus) to the levy funds.</p>
+          <p class="govuk-body">Acme Limited's total levy fund is £495,000.</p>  
+
+      </div>
+
+      <div class="govuk-grid-column-one-third">
+        <h3 class="govuk-heading-m">Related articles</h3>
+        <a href="/0-1-0/contact-pages/apprenticeship-helpline">Contact us</a>
+
+      </div>
+
+  </main>
+</div>
+
+
+
+
+{% endblock %}

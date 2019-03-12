@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Question page
+{% endblock %}
+
+{% block content %}
+<!-- Help banner -->
+{% include "includes/help-banner.html" %}
+
+<!-- User banner -->
+
+{% include "includes/user-banner.html" %}
+
+
+   <!--Header-->
+   <div class="govuk-grid-row">
+     <div class="govuk-grid-column-two-thirds">
+       <h1 class="govuk-heading-xl rj-headings-border">Your team</h1>
+       <p class="govuk-body">
+Invite members, control what they can do, remove members and cancel or resend invitations.</p>
+     </div>
+   </div>
+
+   <!--Table-->
+   <table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Name</th>
+      <th class="govuk-table__header" scope="col">What they can do</th>
+      <th class="govuk-table__header" scope="col">Status</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell" scope="col">Rob Edwards</td>
+      <td class="govuk-table__cell" scope="col">Accept agreements, view information and manage PAYE schemes, organisations, apprentices and team members.</td>
+      <td class="govuk-table__cell" scope="col">Active</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell" scope="col">Susan Hamazaki</td>
+      <td class="govuk-table__cell">View information but can’t make changes.</td>
+      <td class="govuk-table__cell" scope="col">Active</td>
+    </tr>
+  </tbody>
+</table>
+
+<!--Button-->
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+  <button type="submit" class="govuk-button">
+  Add team member
+</button>
+</div>
+</div>
+
+
+
+   </div>
+{% endblock %}
