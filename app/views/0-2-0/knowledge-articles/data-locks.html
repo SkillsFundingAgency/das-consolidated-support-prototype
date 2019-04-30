@@ -1,0 +1,60 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+    <a href="/0-1-0/help-results" class="govuk-back-link">Back</a>
+    </div>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Data locks for employers</h1>
+      </div>
+    </div>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h3 class="govuk-heading-m">Data lock 01</h3>
+        <p class="govuk-body">You and your training provider used a different UK provider reference number (UKPRN).</p>
+        <p class="govuk-body govuk-!-font-weight-bold">What happens next</p>
+        <p class="govuk-body">Check you have the correct UKPRN for your training provider. Either you or your training provider could have used the wrong UKPRN.</p>
+        <p class="govuk-body">If your training provider gave the wrong UKPRN, they need to upload their ILR data for this apprentice again with the correct UKPRN.</p>
+        <p class="govuk-body">If you gave the wrong UKPRN, you need to <a href="#">stop the commitment</a> back to the start date. You should stop the commitment back to 1 August if it started in a previous academic year.</p>
+        <p class="govuk-body">You'll need to <a href="#">contact us</a> so we can add the correct start date, then you can start a new commitment with the correct UKPRN.</p>
+
+        <p class="govuk-body">Contact us if you and your training provider used the correct UKPRN.</p>
+
+        <h3 class="govuk-heading-m">Data lock 02</h3>
+        <p class="govuk-body">You and your training provider used a different unique learner number (ULN).</p>
+        <p class="govuk-body govuk-!-font-weight-bold">What happens next</p>
+        <p class="govuk-body">Check if your training provider has approved the commitment. It has not been approved if it’s in the ‘your cohorts’ section of your apprenticeship service account.</p>
+        <p class="govuk-body">If your training provider has:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>not approved the commitment, they must change the ULN before they approve it</li>
+          <li>approved the commitment, you must stop the commitment and start a new one with the correct ULN</li>
+            </ul>
+
+      </div>
+
+      <div class="govuk-grid-column-one-third">
+        <h3 class="govuk-heading-m">Related articles</h3>
+        <a href="/contact-pages/apprenticeship-helpline">Contact us</a>
+
+      </div>
+
+  </main>
+</div>
+
+
+
+
+{% endblock %}
