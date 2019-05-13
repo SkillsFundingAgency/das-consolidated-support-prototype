@@ -1,0 +1,236 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Feedback survey
+{% endblock %}
+
+{% block content %}
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+         <h1 class="govuk-heading-xl rj-headings-border">Feedback survey</h1>
+
+<!-- Search on GOV.UK -->
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+      <h1 class="govuk-fieldset__heading">
+        Before contacting us, did you try to find the information on GOV.UK?
+      </h1>
+    </legend>
+    <span id="changed-name-hint" class="govuk-hint">
+      This includes if you could not find the right information.
+    </span>
+    <div class="govuk-radios govuk-radios--inline">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="yes">
+        <label class="govuk-label govuk-radios__label" for="changed-name-1">
+          Yes
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+        <label class="govuk-label govuk-radios__label" for="changed-name-2">
+          No
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+
+
+<!-- Contact details -->
+
+<div class="govuk-form-group">
+<fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+<legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+<h1 class="govuk-fieldset__heading">
+How was your experience contacting our support?
+</h1>
+</legend>
+<div class="govuk-checkboxes">
+<div class="govuk-checkboxes__item">
+<input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+<label class="govuk-label govuk-checkboxes__label" for="waste-1">
+  Very easy
+</label>
+</div>
+<div class="govuk-checkboxes__item">
+<input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+<label class="govuk-label govuk-checkboxes__label" for="waste-2">
+  Easy
+</label>
+</div>
+<div class="govuk-checkboxes__item">
+<input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+<label class="govuk-label govuk-checkboxes__label" for="waste-3">
+  Okay
+</label>
+</div>
+<div class="govuk-checkboxes__item">
+<input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+<label class="govuk-label govuk-checkboxes__label" for="waste-2">
+  Difficult
+</label>
+</div>
+<div class="govuk-checkboxes__item">
+<input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+<label class="govuk-label govuk-checkboxes__label" for="waste-2">
+  Very difficult
+</label>
+</div>
+</div>
+</fieldset>
+</div>
+
+
+<!-- Information you needed -->
+
+<div class="govuk-form-group">
+<fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+<legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+<h1 class="govuk-fieldset__heading">
+Did you get the information you needed?
+</h1>
+</legend>
+<div class="govuk-checkboxes">
+<div class="govuk-checkboxes__item">
+<input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+<label class="govuk-label govuk-checkboxes__label" for="waste-1">
+  I got all of the information I needed
+</label>
+</div>
+<div class="govuk-checkboxes__item">
+<input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+<label class="govuk-label govuk-checkboxes__label" for="waste-2">
+  I got some of the information I needed
+</label>
+</div>
+<div class="govuk-checkboxes__item">
+<input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+<label class="govuk-label govuk-checkboxes__label" for="waste-3">
+  I did not get any of the information I needed
+</label>
+</div>
+</div>
+</fieldset>
+</div>
+
+<!-- Explain information clearly -->
+<div class="govuk-form-group">
+<fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+<legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+<h1 class="govuk-fieldset__heading">
+Did the advisor explain this information and any next steps clearly?
+</h1>
+</legend>
+<div class="govuk-checkboxes">
+<div class="govuk-checkboxes__item">
+<input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+<label class="govuk-label govuk-checkboxes__label" for="waste-1">
+  Yes
+</label>
+</div>
+<div class="govuk-checkboxes__item">
+<input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+<label class="govuk-label govuk-checkboxes__label" for="waste-2">
+  Some things could have been clearer
+</label>
+</div>
+<div class="govuk-checkboxes__item">
+<input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+<label class="govuk-label govuk-checkboxes__label" for="waste-3">
+  No
+</label>
+</div>
+</div>
+</fieldset>
+</div>
+
+<!-- Satisfied with time-->
+<div class="govuk-form-group">
+<fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+<legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+<h1 class="govuk-fieldset__heading">
+How satisfied are you with the time it took to get this information?</h1>
+</legend>
+<div class="govuk-checkboxes">
+<div class="govuk-checkboxes__item">
+<input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+<label class="govuk-label govuk-checkboxes__label" for="waste-1">
+  Very satisfied
+</label>
+</div>
+<div class="govuk-checkboxes__item">
+<input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+<label class="govuk-label govuk-checkboxes__label" for="waste-2">
+  Satisfied
+</label>
+</div>
+<div class="govuk-checkboxes__item">
+<input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+<label class="govuk-label govuk-checkboxes__label" for="waste-3">
+  Neither
+</label>
+</div>
+<div class="govuk-checkboxes__item">
+<input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+<label class="govuk-label govuk-checkboxes__label" for="waste-2">
+  Dissatisfied
+</label>
+</div>
+<div class="govuk-checkboxes__item">
+<input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+<label class="govuk-label govuk-checkboxes__label" for="waste-2">
+  Very dissatisfied
+</label>
+</div>
+</div>
+</fieldset>
+</div>
+
+<!-- Improve support -->
+<div class="govuk-form-group">
+  <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+  <h1 class="govuk-fieldset__heading">
+  How can we improve our support?</h1>
+  </legend>
+  <span id="more-detail-hint" class="govuk-hint">
+    Do not include personal or financial information, like your National Insurance number or credit card details.
+  </span>
+  <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+</div>
+
+</div>
+</div>
+
+<div>
+  <button type="submit" data-prevent-double-click="true" class="govuk-button">
+    Send feedback
+  </button>
+  </div>
+
+
+
+{% endblock %}
+
+{% block pageScripts %}
+<script>
+  // $(document).ready(function()){
+  // console.log("DAVE")
+  if (
+      'addEventListener' in document &&
+      document.querySelectorAll
+      ) {
+      document.addEventListener('DOMContentLoaded', function() {
+        var accordions = document.querySelectorAll('.accordion')
+        for (var i = accordions.length - 1; i >= 0; i--) {
+          new Accordion(accordions[i])
+        };
+      })
+    }
+// });
+</script>
+{% endblock %}

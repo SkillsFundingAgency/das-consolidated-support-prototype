@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">English percentage</h1>
+      </div>
+    </div>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <p class="govuk-body">English percentage is the amount of your organisation’s payroll that gets paid to employees who live in England.</p>
+        <p class="govuk-body">HMRC works out your organisation’s English percentage using its payroll information.</p>
+
+        <h3 class="govuk-heading-m">Changes to your English percentage</h3>
+        <p class="govuk-body">Your organisation’s English percentage can change if any of your employees’ living situations change, for example:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>it can increase if your employees who lived in other parts of the UK move to England</li>
+          <li>it can decrease if you hire new employees who live in Scotland, Wales or Northern Ireland</li>
+          </ul>
+
+          <p class="govuk-body">HMRC uses information it already has about where your employees live. It’s important that you tell HMRC if any of your employees’ home addresses change.</p>
+          <p class="govuk-body">You can <a href="#">view your latest English percentage in your apprentice service account</a>.</p>
+
+          <h3 class="govuk-heading-m">How we work out the levy</h3>
+          <p class="govuk-body">To work out the levy, HMRC multiplies the levy declaration by the English percentage. They do this 3 times a year in January, April and October.</p>
+
+          <h3 class="govuk-heading-m">Example</h3>
+          <p class="govuk-body">Company A declares £500,000 apprenticeship levy in the 2018 to 2019 tax year. 90 of their 100 employees live in England, so their English percentage is 90%.</p>
+          <p class="govuk-body">(Declared levy x English percentage) + 10% top up bonus = apprenticeship levy.</p>
+          <p class="govuk-body">(£500,000 x 90%) + 10% = £495,000.</p>
+
+      </div>
+
+      <div class="govuk-grid-column-one-third">
+        <h3 class="govuk-heading-m">Related articles</h3>
+        <a href="/0-1-0/contact-pages/apprenticeship-helpline">Contact us</a>
+
+      </div>
+
+  </main>
+</div>
+
+
+
+
+{% endblock %}

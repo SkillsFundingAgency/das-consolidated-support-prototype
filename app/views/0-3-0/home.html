@@ -1,0 +1,74 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Question page
+{% endblock %}
+
+
+
+{% block content %}
+
+  <!-- Help banner -->
+  {% include "includes/help-banner.html" %}
+
+  <!-- User banner -->
+
+{% include "includes/user-banner.html" %}
+
+
+   <!--Header-->
+   <div class="govuk-grid-row">
+     <div class="govuk-grid-column-full">
+       <h1 class="govuk-heading-xl rj-headings-border" style="" >Assurance Aerospace Engineering</h1>
+     </div>
+   </div>
+
+   <!--Navigation and to do-->
+   <div class="govuk-grid-row">
+
+     <div class="govuk-grid-column-one-third">
+       <h3 class="govuk-heading-m"><a href="/finance">Finance</a></h3>
+       <p class="govuk-body">View your financial transactions.</p>
+
+       <h3 class="govuk-heading-m"><a href="/your-team">Your team</a></h3>
+       <p class="govuk-body">Control what your team can do and invite new team members.</p>
+
+       <h3 class="govuk-heading-m"><a href=“#”>PAYE schemes</a></h3>
+       <p class="govuk-body">Add or remove PAYE schemes.</p>
+     </div>
+     <div class="govuk-grid-column-one-third">
+       <h3 class="govuk-heading-m"><a href="apprentices">Apprentices</a></h3>
+       <p class="govuk-body">Add apprentices, update details of existing apprentices and authorise payments to training
+         providers.</p>
+       <h3 class="govuk-heading-m"><a href="#">Public sector reporting</a></h3>
+       <p class="govuk-body">Reporting against the public sector target.</p>
+     </div>
+
+     <!-- Right column -->
+     <div class="govuk-grid-column-one-third">
+        <div class="rj-alert-wrapper">
+       <h3 class="govuk-heading-m">To do</h3>
+       <h2 class="govuk-heading-s">Complete forecast</h2>
+       <p class="govuk-body"><a href="#">Calculate your available spend</a></p>
+       </div>
+       <div class="rj-alert-wrapper">
+       <h2 class="govuk-heading-s">5 requests</h2>
+       <p class="govuk-body"><a href="#">Review your apprentices</a></p>
+       </div>
+       <div class="rj-alert-wrapper">
+       <h2 class="govuk-heading-s">Change apprentice details</h2>
+       <p class="govuk-body"><a href="#">Review the changes</a></p>
+       </div>
+       <div class="rj-alert-wrapper">
+       <h2 class="govuk-heading-s">12 apprentices failed double lock</h2>
+       <p class="govuk-body"><a href="#">Update details</a></p>
+     </div>
+     <div class="rj-alert-wrapper">
+       <h2 class="govuk-heading-s">Only 1 person has account access</h2>
+       <p class="govuk-body"><a href="#">Give access to others</a></p>
+       </div>
+       </div>
+     </div>
+
+   </div>
+{% endblock %}
