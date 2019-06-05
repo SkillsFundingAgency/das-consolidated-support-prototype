@@ -1,0 +1,75 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+    </div>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Change your apprentice's details</h1>
+      </div>
+    </div>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <p class="govuk-body">You can <a href="#">change your apprentice’s details</a> in your apprenticeship service account. This includes their name, date of birth and training information.</p>
+        <p class="govuk-body">The apprentice’s training provider must approve any changes that you make.</p>
+
+        <h3 class="govuk-heading-m">Change the status of an apprenticeship</h3>
+        <p class="govuk-body">You can pause an apprenticeship if you need to:</p>
+          <ul class="govuk-list govuk-list--bullet">
+          <li>record a break in learning (that you’ve agreed with the apprentice and their training provider)</li>
+          <li>freeze future payments to a training provider for a period of time</li>
+          </ul>
+
+          <p class="govuk-body">You can stop an apprenticeship if you need to:</p>
+            <ul class="govuk-list govuk-list--bullet">
+            <li>withdraw an apprentice from their apprenticeship</li>
+            <li>change your training provider during the course</li>
+            <li>cancel all future payments</li>
+            </ul>
+<!--Warning-->
+<div class="govuk-warning-text">
+  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+  <strong class="govuk-warning-text__text">
+    <span class="govuk-warning-text__assistive">Warning</span>
+    Do not stop a completed apprenticeship.
+  </div>
+
+
+          <p class="govuk-body">After you make your final apprenticeship payment, the apprentice will show as ‘completed’ in your apprenticeship service account. </p>
+
+          <h3 class="govuk-heading-m">Change an apprentice’s course details</h3>
+          <p class="govuk-body">You can only change an apprentice’s course details in your apprenticeship service account before the course starts. This includes the course name, type, start date and end date.</p>
+          <p class="govuk-body">If you need to change an apprentice’s course name after the course has started, you must:</p>
+            <ul class="govuk-list govuk-list--bullet">
+            <li>stop the apprenticeship and backdate to the start date</li>
+            <li>update the ILR</li>
+            <li>start a new apprenticeship with the correct details</li>
+            </ul>
+
+      </div>
+
+      <div class="govuk-grid-column-one-third">
+        <h3 class="govuk-heading-m">Related articles</h3>
+        <a href="/contact-pages/apprenticeship-helpline">Contact us</a>
+
+      </div>
+      </div>
+  </main>
+</div>
+
+
+
+
+{% endblock %}
