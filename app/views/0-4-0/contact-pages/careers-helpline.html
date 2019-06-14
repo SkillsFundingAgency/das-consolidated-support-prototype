@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+About - GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+	{{ govukBreadcrumbs({
+	  items: [
+	    {
+	      text: "GOV.UK Prototype Kit",
+	      href: "/docs"
+	    }
+	  ]
+	}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">Careers helpline</h1>
+
+      <p class="govuk-heading-s">
+				Webchat
+      </p>
+
+			<p class="govuk-body-s">
+				Chat with an adviser using <a href="">webchat</a>. This service is open from 8am to 10pm, 7 days a week.      </p>
+
+				<p class="govuk-heading-s">
+					Phone
+				</p>
+
+			<p class="govuk-body-s">
+				Call 0800 100 900 to speak to an adviser. Lines are open from 8am to 10pm, 7 days a week. Calls are free from landlines and most mobile numbers. Find out about <a href="">call charges and freephone numbers</a>.
+				</p>
+
+				<p class="govuk-body-s">
+					If you need advice in a different language, choose option 5 to speak to an adviser using an interpreter.
+					</p>
+
+			<p class="govuk-heading-s">
+				Web form</p>
+
+				<p class="govuk-body-s">
+					Use our <a href="">web form</a> to ask your question and we'll get back to you as soon as possible.
+					</p>
+
+					<p class="govuk-heading-s">
+						Callback</p>
+
+					<p class="govuk-body-s">
+						Tell us your number and we'll <a href="">call you back</a>.
+						</p>
+
+						<p class="govuk-heading-s">
+							Face-to-face advice</p>
+
+						<p class="govuk-body-s">
+							Call 0800 100 900 to find out if you're eligible for a face-to-face appointment with an adviser.
+							</p>
+
+							<p class="govuk-heading-s">
+								Text</p>
+
+							<p class="govuk-body-s">
+								Text us on 07766 413219 for information like telephone numbers or addresses. We can't open pictures sent by text.
+							</p>
+
+							<p class="govuk-heading-s">
+								By post</p>
+
+							<p class="govuk-body-s">
+								National Careers Service
+								PO BOX 1331
+								Newcastle Upon Tyne
+								NE99 5EB							
+							</p>
+
+    </div>
+
+
+  </div>
+
+
+
+{% endblock %}
