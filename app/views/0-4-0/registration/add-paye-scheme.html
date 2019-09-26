@@ -1,0 +1,109 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+    </div>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Add a PAYE scheme</h1>
+      </div>
+    </div>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <p class="govuk-body">We need you to add the PAYE scheme for your organisation.</p>
+        <p class="govuk-body">You can do this by using either of the following:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>the Government Gateway login for your organisation</li>
+          <li>your accounts office reference number for your organisation</li>
+          </ul>
+
+          <details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Find your Government Gateway details
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    We need to know your nationality so we can work out which elections you’re entitled to vote in. If you cannot provide your nationality, you’ll have to send copies of identity documents through the post.
+  </div>
+</details>
+
+<!--Progressive disclosure-->
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Find your accounts office and PAYE scheme reference numbers
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    We need to know your nationality so we can work out which elections you’re entitled to vote in. If you cannot provide your nationality, you’ll have to send copies of identity documents through the post.
+  </div>
+</details>
+
+<p class="govuk-body govuk-!-font-weight-bold">You can add a PAYE scheme later if you need more time, we can still create your account for you.</p>
+
+
+<!--Radios-->
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <div class="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+          use Government Gateway log in
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+          use accounts office reference number and employer PAYE scheme reference (you can use this if your annual payroll for your organisation is under £3 million)
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+          No, I'll do this later
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+
+<div class="govuk-warning-text">
+  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+  <strong class="govuk-warning-text__text">
+    <span class="govuk-warning-text__assistive">Warning</span>
+    Before you continue, you must make sure you have authority to add PAYE schemes to the account for this organisation.
+  </strong>
+</div>
+
+<button class="govuk-button" data-module="govuk-button">
+Continue</button>
+
+      </div>
+
+      <div class="govuk-grid-column-one-third">
+        <!-- Start of esfa Zendesk Widget script -->
+        <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=1b1ce288-39ea-4d40-a5e1-3a5e08aadd89"> </script>
+        <!-- End of esfa Zendesk Widget script -->
+      </div>
+
+  </main>
+</div>
+
+
+
+
+{% endblock %}
