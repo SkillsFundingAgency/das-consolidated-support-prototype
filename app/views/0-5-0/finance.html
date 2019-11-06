@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Question page
+{% endblock %}
+
+{% block content %}
+<!-- Help banner -->
+{% include "includes/help-banner.html" %}
+
+<!-- User banner -->
+
+{% include "includes/user-banner.html" %}
+
+
+   <!--Header-->
+   <div class="govuk-grid-row">
+     <div class="govuk-grid-column-two-thirds">
+       <h1 class="govuk-heading-xl rj-headings-border">Finance</h1>
+     </div>
+   </div>
+
+   <!--Navigation and to do-->
+   <div class="govuk-grid-row">
+
+     <div class="govuk-grid-column-one-third">
+       <h3 class="govuk-heading-m"><a href="#">Forecast your funds</a></h3>
+       <p class="govuk-body">Calculate the amount you have available to spend on apprenticeships.</p>
+
+       <h3 class="govuk-heading-m"><a href="#">View funds you could lose</a></h3>
+       <p class="govuk-body">Your funds will expire after 18 months if you don't spend it on apprenticeships.</p>
+
+       <h3 class="govuk-heading-m"><a href=“#”>View your transactions</a></h3>
+       <p class="govuk-body">View payments in and out of your account.</p>
+     </div>
+     <div class="govuk-grid-column-one-third">
+       <h3 class="govuk-heading-m"><a href="#">View your English percentage</a></h3>
+       <p class="govuk-body">View the English percentage that's been applied to your levy.</p>
+       <h3 class="govuk-heading-m"><a href="#">Download your financial information</a></h3>
+       <p class="govuk-body">Download your financial information for your records.</p>
+     </div>
+
+
+
+   </div>
+{% endblock %}

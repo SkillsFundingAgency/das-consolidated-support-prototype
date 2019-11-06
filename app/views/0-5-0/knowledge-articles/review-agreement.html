@@ -1,0 +1,58 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+    </div>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Review the employer agreement</h1>
+      </div>
+    </div>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <p class="govuk-body">The employer agreement is a legal contract between your organisation and the Education and Skills Funding Agency (ESFA). You must accept and follow it to access government funding for training and assessing apprentices.</p>
+        <p class="govuk-body">You can <a href="#">accept the employer agreement</a> in your apprenticeship service account. View the full agreement, share or print it using the following link: <a href="#">https://www.gov.uk/government/publications/apprenticeship-agreement-for-employers-1-May-2018</a></p>
+        <p class="govuk-body">Every employer that takes on apprentices must sign an employer agreement. It is the same for all employers and includes the terms and conditions of:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>using the apprenticeship service</li>
+          <li>using government funding to train and assess apprentices</li>
+          <li>working with the ESFA</li>
+          </ul>
+
+          <p class="govuk-body">You must sign the agreement to get or reserve funding for an apprenticeship. After you sign the agreement you cannot cancel it.</p>
+
+          <!--Warning-->
+          <div class="govuk-warning-text">
+            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+            <strong class="govuk-warning-text__text">
+              <span class="govuk-warning-text__assistive">Warning</span>
+              The agreement is legally binding. If the employer breaks it, we can close their account and stop them running apprenticeships.</strong>
+          </div>
+
+      </div>
+
+      <div class="govuk-grid-column-one-third">
+        <h3 class="govuk-heading-m">Related articles</h3>
+        <a href="/contact-pages/apprenticeship-helpline">Contact us</a>
+
+      </div>
+
+  </main>
+</div>
+
+
+
+
+{% endblock %}
