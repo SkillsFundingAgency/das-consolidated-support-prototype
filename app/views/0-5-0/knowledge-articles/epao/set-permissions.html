@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Set permissions</h1>
+      </div>
+    </div>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+          <p class="govuk-body">If you have full access to the organisation’s apprenticeship assessment service account, you can manage invitations and set permissions.</p>
+
+          <p class="govuk-body">A member of your organisation can create an account and request access themselves. You’ll need to accept any requests and set their permissions.</p>
+
+          <h3 class="govuk-heading-m">Set permissions</h3>
+          <p class="govuk-body">There are different permissions set by anyone who can ‘manage users’. All members can view the dashboard, but you can choose to let them:</p>
+
+          <ul class="govuk-list govuk-list--bullet">
+            <li>view the pipeline</li>
+            <li>record grades and issue certificate</li>
+            <li>view completed assessments</li>
+            <li>change organisation details</li>
+            <li>apply for a standard</li>
+            <li>manage users</li>
+              </ul>
+
+              <p class="govuk-body">You should give at least one other member full access (also known as a ‘primary user’). This means that if the primary user is on holiday or leaves the organisation, someone else can make changes.</p>
+                <p class="govuk-body">If you set up the organisation’s account you’re a primary user. Contact us if nobody in your organisation has full access to the account.</p>
+
+                <h3 class="govuk-heading-m">Non-levy employers</h3>
+                <p class="govuk-body">If your organisation does not pay the levy, then it always co-invests with the government. The maximum amount of apprenticeship training your organisation will pay for apprenticeships that started:</p>
+
+                <h3 class="govuk-heading-m">Remove someone from your account</h3>
+                  <p class="govuk-body">Members with ‘manage users’ permission can remove others from the account. You can remove other members in the ‘contacts’ area within the organisation section of the account.</p>
+
+
+      </div>
+
+      <div class="govuk-grid-column-one-third">
+        <h3 class="govuk-heading-m">Related articles</h3>
+        <a href="/contact-pages/apprenticeship-helpline">Contact us</a>
+
+      </div>
+
+  </main>
+</div>
+
+
+
+
+{% endblock %}
